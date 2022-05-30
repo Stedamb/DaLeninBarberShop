@@ -1,0 +1,185 @@
+/* ======CSS HOME====== */
+
+/* TOPBAR */
+.header-text {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* HEADER */
+.header-home {
+  background-image: url(../res/header.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.heaedr-prenota {
+    background-image: url(../res/photo1.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+
+.text-container {
+  height: 300px;
+}
+
+.btn-prenota { 
+    font-size: 24pt;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+/* HEADER DATE */
+
+.day {
+  color: #fff;
+  font-size: 200px;
+}
+
+.month {
+  color: #fff;
+  font-size: 60px;
+}
+
+.year {
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (max-width: 992px) {
+  .day {
+    font-size: 150px;
+  }
+
+  .month {
+    font-size: 50px;
+  }
+  
+  .year {
+    font-size: 20px;
+  }
+
+  .day-container {
+    height: 150px;
+  }
+}
+
+/* CALENDAR */
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  }
+
+.btn:hover {
+    background-color: #d3d3d3;
+  }
+
+.calendar-cell:hover{
+  background-color: #d3d3d3;
+}
+
+@media (max-width: 992px) {
+  .calendar-body {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .horizontal-calendar {
+    display: none;
+  }
+}
+
+.horizontal-calendar{
+  overflow: auto;
+}
+
+.calendar{
+  margin: 10px;
+  overflow:auto;
+}
+
+.calendar-row{
+  overflow-x:auto;
+}
+
+.calendar-day{
+  background-color: rgb(235, 235, 235);
+  border-radius: 10%;
+  padding: 10px 15px;
+  text-align:center;
+}
+
+.separator{
+  width: 8px;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+/* TIMELINE FULLSCREEN */
+.horizontal-timeline {
+    margin: 10px;
+    overflow: auto;
+}
+
+.timeline-big {
+    overflow: auto;
+}
+
+.timeline-row {
+    overflow-x:auto;
+}
+
+timeline-row:first-child {
+    border-radius: 10px 10px 10px 10px;
+}
+
+.timeline-hour{
+    background-color: rgb(235, 235, 235);
+    padding: 10px 15px;
+    text-align:center;
+    height: 150px;
+    min-width: 200px;
+  }
+
+.timeline-hour:hover {
+    background-color: #d3d3d3;
+}
+
+.separator-2 {
+    width: 2px;
+}
+
+/* FOOTER */
+.footer-links {
+    font-size: 14pt;
+}
+
+.footer-bottom-text {
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.644);
+}
+
+/* Iscrizioni */
+
+@media (max-width: 992px) {
+    .desktop {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .mobile {
+      display: none;
+    }
+  }
+
+  .table-bordered {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+  

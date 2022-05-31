@@ -224,7 +224,7 @@ timeline-row:first-child {
     padding: 10px 15px;
     text-align:center;
     height: 150px;
-    min-width: 200px;
+    min-width: 100px;
   }
 
 .timeline-hour:hover {

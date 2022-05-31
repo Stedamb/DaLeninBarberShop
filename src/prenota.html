@@ -54,6 +54,7 @@
             </div>
         </header>
 
+        <!-- HEADER -->
         <div class="row header-prenota">
             <div class="col-lg-10 row">
                 <div class="col-lg-3 col-12 text-center text-lg-end d-flex flex-column day-container">
@@ -85,27 +86,20 @@
                             <button class="btn flex-fill mx-4" id="next" onclick="next()">></button>
                         </div>
                     </div>
-                    <span class="mt-3 ms-3">Campo 1 - Tennis</span>
+                    <span class="mt-3 ms-3">Clicca su un orario per selezionare</span>
+                    <span class="mt-3 ms-3">Mattina</span>
                     <div class="horizontal-timeline ms-4">
                         <table class="table-responsive timeline-big">
                             <tbody>
-                                <tr id="timeline-row-1" class="timeline-row"></tr>
+                                <tr id="timeline-morning" class="timeline-row"></tr>
                             </tbody>
                         </table>
                     </div>
-                    <span class="mt-3 ms-3">Campo 2 - Tennis</span>
+                    <span class="mt-3 ms-3">Pomeriggio</span>
                     <div class="horizontal-timeline ms-4">
                         <table class="table-responsive timeline-big">
                             <tbody>
-                                <tr id="timeline-row-2" class="timeline-row"></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <span class="mt-3 ms-3">Campo 3 - Paddle</span>
-                    <div class="horizontal-timeline ms-4">
-                        <table class="table-responsive timeline-big">
-                            <tbody>
-                                <tr id="timeline-row-3" class="timeline-row"></tr>
+                                <tr id="timeline-afternoon" class="timeline-row"></tr>
                             </tbody>
                         </table>
                     </div>
@@ -125,6 +119,16 @@
                                     <label for="datepicker">Data</label>
                                     <input class="form-control" id="datepicker" type="text"
                                         placeholder="inserisci la data in formato gg/mm/aaaa">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="timepicker-start">Ora inizio</label>
+                                    <input class="form-control" id="timepicker-start" type="text"
+                                        placeholder="inserisci l'ora in formato hh:mm">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="timepicker-end">Ora fine</label>
+                                    <input class="form-control" id="timepicker-end" type="text"
+                                        placeholder="inserisci l'ora in formato hh:mm">
                                 </div>
                                    
                                 <span class="mt-3">Servizio</span>
@@ -151,6 +155,8 @@
                         </form>
                     </div>
                 </div>
+
+                <!-- CALENDAR -->
                 <div class="col-12 mt-4">
                     <div class="card">
                         <div class="card-header">
@@ -187,7 +193,7 @@
     <!-- SCRIPT -->
     <script src="../script/variables.js"></script>
     <script src="../script/prenota_script.js"></script>
-    <script src="../script/script.js"></script>
+    <!-- <script src="../script/script.js"></script> -->
 </body>
 
 </html>

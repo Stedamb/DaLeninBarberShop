@@ -1,19 +1,15 @@
     // Variables
-    var today = new Date();
-    var selectedDay = new selectedDay(today.getDate(), today.getMonth(), today.getFullYear());
-    var prevSelectedDay = today.getDate();
-    var prevSelectedCell;
-    var currentMonth = today.getMonth();
-    var currentYear = today.getFullYear();
-    var selectedMonth = document.getElementById("month");
-    var selectedYear = document.getElementById("year");
-    var calendarHeader = document.getElementById("mandyr");
-    var calendarTable = document.getElementById("calendar");
-    var horizontalCalendar = document.getElementById("calendar-row");
-    var weatherIcon = document.getElementById("weather");
-    var weatherIconCode = 900;
-    var weatherTemperature = document.getElementById("w-temperature");
-    // var weatherDescription = document.getElementById("w-description");
+    // var today = new Date();
+    // var selectedDay = new selectedDay(today.getDate(), today.getMonth(), today.getFullYear());
+    // var prevSelectedDay = today.getDate();
+    // var prevSelectedCell;
+    // var currentMonth = today.getMonth();
+    // var currentYear = today.getFullYear();
+    // var selectedMonth = document.getElementById("month");
+    // var selectedYear = document.getElementById("year");
+    // var calendarHeader = document.getElementById("mandyr");
+    // var calendarTable = document.getElementById("calendar");
+    // var horizontalCalendar = document.getElementById("calendar-row");
 
     // Date and time pickers (jQuery)
     $(function() {
@@ -59,37 +55,6 @@
         document.getElementById('header-day').appendChild(document.createTextNode(day));
         document.getElementById('header-month').appendChild(document.createTextNode(month));
         document.getElementById('header-year').appendChild(document.createTextNode(year));
-    }
-
-    function getWeatherData() {       
-        // Posizione TCV
-        let lat = "43.95636761647612";
-        let lon = "12.374910428790077";
-
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&lang=it&exclude={part}&appid=${API_KEY}`)
-        .then(res => res.json()).then(data => {
-            showWeatherData(data);
-        });
-    }
-
-    function showWeatherData(data) {
-        weather.classList.remove("wi-owm-"+weatherIconCode);
-        weatherTemperature.innerHTML = "";
-        // weatherDescription.innerHTML = "";
-        if (selectedDay.day >= today.getDate() && selectedDay.day <= today.getDate() + 7 && currentMonth == today.getMonth() && currentYear == today.getFullYear()) {
-            // Icon
-            let dateForWeather = selectedDay.day - today.getDate();
-            weatherIconCode = data.daily[dateForWeather].weather[0].id;
-            weather.classList.add("wi-owm-"+weatherIconCode);
-
-            // Temperature 
-            let temperature = data.daily[dateForWeather].temp.day;
-            weatherTemperature.appendChild(document.createTextNode(temperature+"°"));
-
-            // Desciption
-            // let conditions = data.daily[dateForWeather].weather[0].description;
-            // weatherDescription.appendChild(document.createTextNode(conditions));
-        }
     }
 
     function addEvent() {

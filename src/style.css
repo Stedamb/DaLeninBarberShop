@@ -1,18 +1,40 @@
 /* ======CSS HOME====== */
 
-/* @media {
-    
-}
-.container-fluid { 
+@media (max-width: 600px) {
+    .container-fluid { 
+        font-size: smaller;
+    }
 
-} */
+}
 
 /* TOPBAR */
-.header-text {
+.topbar-text {
     font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 4vh;
-    text-align: center;
+    font-size: 5vh;
+}
+
+.topbar-logo { 
+    width: 22%;
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .topbar-logo { 
+        width: 50%;
+    }
+}
+@media (max-width: 620px) {
+    .topbar-logo { 
+        align-items: center;
+        width: 70%;
+    }
+    
+    .topbar-text {
+        font-family: 'Monsieur La Doulaise', cursive;
+        font-size: 3vh;
+        margin-top: 5px;
+    }
 }
 
 /* HEADER */
@@ -22,6 +44,17 @@
   height: 500px;
 }
 
+.header-text { 
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-text > p { 
+    font-style: italic;
+    padding: 5px;
+}
+
 .header-prenota {
     background-image: url(../res/photo1.jpg);
     background-size: cover;
@@ -29,24 +62,55 @@
   }
 
 .text-container {
-  height: 300px;
+    height: 300px;
 }
 
 .btn-prenota { 
-    font-size: 24pt;
     background-color: #fff;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 30pt;
     vertical-align: middle;
 }
-  
+
+/* CONTENT */
+.first-content {
+    background-image: url(../res/first-content-2.jpg);
+    background-size: cover;
+    height: 500px;
+  }
+
 /* FOOTER */
 .footer-links {
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .footer-bottom-text {
-    font-size: 12pt;
+    font-size: 10pt;
     color: rgba(255, 255, 255, 0.644);
 }
+
+@media (max-width: 600px) {
+    .footer-links {
+        font-size: 18pt;
+    }
+
+    .footer-bottom-text {
+        font-size: 4pt;
+        color: rgba(255, 255, 255, 0.644);
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-links {
+        font-size: 12pt;
+    }
+
+    .footer-bottom-text {
+        font-size: 10pt;
+        color: rgba(255, 255, 255, 0.644);
+    }
+}
+
 
 /* HEADER DATE */
 

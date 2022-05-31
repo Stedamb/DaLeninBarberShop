@@ -1,9 +1,16 @@
 /* ======CSS HOME====== */
 
+/* @media {
+    
+}
+.container-fluid { 
+
+} */
+
 /* TOPBAR */
 .header-text {
     font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 50px;
+    font-size: 4vh;
     text-align: center;
     margin-top: 10px;
 }
@@ -29,6 +36,16 @@
     font-size: 24pt;
     background-color: #fff;
     vertical-align: middle;
+}
+  
+/* FOOTER */
+.footer-links {
+    font-size: 14pt;
+}
+
+.footer-bottom-text {
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.644);
 }
 
 /* HEADER DATE */
@@ -120,7 +137,7 @@
   display: none; 
 }
 
-/* TIMELINE FULLSCREEN */
+/* TIMELINE */
 .horizontal-timeline {
     margin: 10px;
     overflow: auto;
@@ -154,15 +171,6 @@ timeline-row:first-child {
     width: 2px;
 }
 
-/* FOOTER */
-.footer-links {
-    font-size: 14pt;
-}
-
-.footer-bottom-text {
-    font-size: 12pt;
-    color: rgba(255, 255, 255, 0.644);
-}
 
 /* Iscrizioni */
 

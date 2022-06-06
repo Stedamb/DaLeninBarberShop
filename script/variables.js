@@ -29,8 +29,8 @@
 
     function selectCell(table, fun){
         for (let i = 0; i < table.cells.length; i++) {
-            timeline.cells[i].onclick = function() { 
-                fun(timeline.cells[i]);
+            table.cells[i].onclick = function() { 
+                fun(table.cells[i]);
             }
         }
     }

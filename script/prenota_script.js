@@ -6,7 +6,6 @@ var prevSelectedDay = today.getDate();
 var prevSelectedCell;
 
 var cardHeaderDay = document.getElementById("card-header-day");
-var timeline = document.getElementById("timeline-row");
 var cellStartHour;
 var cellEndHour;
 var cellContent;
@@ -97,8 +96,8 @@ cardHeaderDay.innerHTML = days[today.getDay()] + " " + today.getDate() + " " + m
 
 // Set Timeline
 
-var timeline = document.getElementById("timeline-morning");
-timeline.innerHTML = "";
+var timeline1 = document.getElementById("timeline-morning");
+timeline1.innerHTML = "";
 
 for (let i = 8; i < 13;) {
     var cell = document.createElement("td");
@@ -133,8 +132,8 @@ for (let i = 8; i < 13;) {
     cell.appendChild(cellEndHour);
     cell.appendChild(br); 
     cell.appendChild(cellContent);
-    timeline.appendChild(cell);
-    timeline.appendChild(separator);
+    timeline1.appendChild(cell);
+    timeline1.appendChild(separator);
 
     var cell = document.createElement("td");
 
@@ -170,14 +169,14 @@ for (let i = 8; i < 13;) {
     cell.appendChild(cellEndHour);
     cell.appendChild(br2); 
     cell.appendChild(cellContent);
-    timeline.appendChild(cell);
-    timeline.appendChild(separator2);
+    timeline1.appendChild(cell);
+    timeline1.appendChild(separator2);
 
 }
-selectCell(timeline, selectHour);
+selectCell(timeline1, selectHour);
 
-var timeline = document.getElementById("timeline-afternoon");
-timeline.innerHTML = "";
+var timeline2 = document.getElementById("timeline-afternoon");
+timeline2.innerHTML = "";
 
 for (let i = 13; i < 20;) {
     var cell = document.createElement("td");
@@ -212,8 +211,8 @@ for (let i = 13; i < 20;) {
     cell.appendChild(cellEndHour);
     cell.appendChild(br); 
     cell.appendChild(cellContent);
-    timeline.appendChild(cell);
-    timeline.appendChild(separator);
+    timeline2.appendChild(cell);
+    timeline2.appendChild(separator);
 
     var cell = document.createElement("td");
 
@@ -249,13 +248,14 @@ for (let i = 13; i < 20;) {
     cell.appendChild(cellEndHour);
     cell.appendChild(br2); 
     cell.appendChild(cellContent);
-    timeline.appendChild(cell);
-    timeline.appendChild(separator2);
-
+    timeline2.appendChild(cell);
+    timeline2.appendChild(separator2);
 }
+selectCell(timeline2, selectHour);
 
 
 function selectHour(cell) { 
+    console.log(cell);
     if (selectedDay.day < 10 && selectedDay.month < 10) { 
         datePicker.value = '0' + selectedDay.day + '/' + '0' + selectedDay.month + '/' + selectedDay.year;
     } else if (selectedDay.day < 10 && selectedDay.month >= 10) { 

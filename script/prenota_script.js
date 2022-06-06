@@ -11,6 +11,8 @@ var cellEndHour;
 var cellContent;
 var br = document.createElement("br");
 
+var formPrenota = document.getElementById("form-prenota");
+
 var datePicker = document.getElementById("datepicker");
 var timePickerStart = document.getElementById("timepicker-start");
 var timePickerEnd = document.getElementById("timepicker-end");
@@ -48,6 +50,8 @@ $(function() {
 setDateInHeader();
 
 showCalendar(currentMonth, currentYear);
+
+$("#form-conferma").hide();
 
 
 // Implementation
@@ -255,15 +259,14 @@ selectCell(timeline2, selectHour);
 
 
 function selectHour(cell) { 
-    console.log(cell);
     if (selectedDay.day < 10 && selectedDay.month < 10) { 
-        datePicker.value = '0' + selectedDay.day + '/' + '0' + selectedDay.month + '/' + selectedDay.year;
+        datePicker.value = '0' + selectedDay.day + '/' + '0' + (selectedDay.month + 1) + '/' + selectedDay.year;
     } else if (selectedDay.day < 10 && selectedDay.month >= 10) { 
-        datePicker.value = '0' + selectedDay.day + '/' + selectedDay.month + '/' + selectedDay.year;
+        datePicker.value = '0' + selectedDay.day + '/' + (selectedDay.month + 1) + '/' + selectedDay.year;
     } else if (selectedDay.month < 10 && selectedDay.day >= 10) { 
-        datePicker.value = selectedDay.day + '/' + '0' + selectedDay.month + '/' + selectedDay.year;
+        datePicker.value = selectedDay.day + '/' + '0' + (selectedDay.month + 1) + '/' + selectedDay.year;
     } else { 
-        datePicker.value = selectedDay.day + '/' + selectedDay.month + '/' + selectedDay.year;
+        datePicker.value = selectedDay.day + '/' + (selectedDay.month + 1) + '/' + selectedDay.year;
     }
     timePickerStart.value = cell.firstChild.innerHTML;
     timePickerEnd.value = cell.childNodes[2].innerHTML;

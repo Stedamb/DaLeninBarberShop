@@ -41,7 +41,7 @@
 
 /* HEADER */
 .header-home {
-  background-image: url(../res/header.jpg);
+  background-image: url(../res/01.jpg);
   background-size: cover;
   height: 500px;
 }
@@ -58,7 +58,7 @@
 }
 
 .header-prenota {
-    background-image: url(../res/photo1.jpg);
+    background-image: url(../res/02.jpg);
     background-size: cover;
     height: 300px;
   }
@@ -75,7 +75,7 @@
 
 /* CONTENT */
 .first-content {
-    background-image: url(../res/first-content-2.jpg);
+    background-image: url(../res/02.jpg);
     background-size: cover;
     height: 500px;
   }

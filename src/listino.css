@@ -1,0 +1,10 @@
+.header {
+    background-image: url(../res/listino.jpg);
+    background-size: cover;
+    background-position: right;
+    min-height: 95vh;
+}
+
+.card > div { 
+    text-align: center;
+}

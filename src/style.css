@@ -1,9 +1,13 @@
-/* ======CSS HOME====== */
+/* ======MAIN CSS====== */
+
+.container-fluid { 
+    padding: 0;
+}
 
 @media (max-width: 600px) {
-    .container-fluid { 
+    /* .container-fluid { 
         font-size: smaller;
-    }
+    } */
 
 }
 
@@ -13,72 +17,31 @@
     font-size: 5vh;
 }
 
-.topbar-logo { 
+.topbar-logo {
     width: 22%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 @media (max-width: 800px) {
-    .topbar-logo { 
+    .topbar-logo {
         width: 50%;
     }
 }
+
 @media (max-width: 620px) {
-    .topbar-logo { 
+    .topbar-logo {
         align-items: center;
         width: 70%;
     }
-    
+
     .topbar-text {
         font-family: 'Monsieur La Doulaise', cursive;
         font-size: 3vh;
-        margin-top: 5px;
         text-decoration: none;
         color: #fff;
     }
 }
-
-/* HEADER */
-.header-home {
-  background-image: url(../res/01.jpg);
-  background-size: cover;
-  height: 500px;
-}
-
-.header-text { 
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.header-text > p { 
-    font-style: italic;
-    padding: 5px;
-}
-
-.header-prenota {
-    background-image: url(../res/02.jpg);
-    background-size: cover;
-    height: 300px;
-  }
-
-.text-container {
-    height: 300px;
-}
-
-.btn-prenota { 
-    background-color: #fff;
-    font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 30pt;
-}
-
-/* CONTENT */
-.first-content {
-    background-image: url(../res/02.jpg);
-    background-size: cover;
-    height: 500px;
-  }
 
 /* FOOTER */
 .footer-links {
@@ -112,94 +75,151 @@
     }
 }
 
+/* ======CSS HOME====== */
+
+/* HEADER */
+.header-home {
+    background-image: url(../res/05-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+
+.header-home>div>img {
+    width: 75%;
+    align-items: center;
+    border-radius: 50%;
+}
+
+@media (min-width: 620px) {
+    .header-home>div>img {
+        width: 40%;
+        align-items: center;
+        border-radius: 50%;
+    }
+}
+
+.btn-prenota {
+    background-color: #fff;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 36pt;
+}
+
+/* CONTENT */
+.first-content {
+    background-image: url(../res/04-4.jpg);
+    background-size: cover;
+    height: 95vh;
+}
+
+/* ======CSS LOCATION====== */
+.location-background {
+    background-color: rgb(85, 85, 85);
+}
+
+.carousel { 
+    height: 90vh;
+}
+
+.carousel > .carousel-inner > .carousel-item > img{ 
+    height: 90vh;
+}
+
+/* ======CSS BOOKING====== */
+
+/* HEADER */
+.header-prenota {
+    background-image: url(../res/02.jpg);
+    background-size: cover;
+    height: 300px;
+}
 
 /* HEADER DATE */
-
 .day {
-  color: #fff;
-  font-size: 200px;
+    color: #fff;
+    font-size: 200px;
 }
 
 .month {
-  color: #fff;
-  font-size: 60px;
+    color: #fff;
+    font-size: 60px;
 }
 
 .year {
-  color: #fff;
-  font-size: 30px;
+    color: #fff;
+    font-size: 30px;
 }
 
 @media (max-width: 992px) {
-  .day {
-    font-size: 150px;
-  }
+    .day {
+        font-size: 150px;
+    }
 
-  .month {
-    font-size: 50px;
-  }
-  
-  .year {
-    font-size: 20px;
-  }
+    .month {
+        font-size: 50px;
+    }
 
-  .day-container {
-    height: 150px;
-  }
+    .year {
+        font-size: 20px;
+    }
+
+    .day-container {
+        height: 150px;
+    }
 }
 
 /* CALENDAR */
 .btn:focus {
-  outline: none;
-  box-shadow: none;
-  }
+    outline: none;
+    box-shadow: none;
+}
 
 .btn:hover {
     background-color: #d3d3d3;
-  }
+}
 
-.calendar-cell:hover{
-  background-color: #d3d3d3;
+.calendar-cell:hover {
+    background-color: #d3d3d3;
 }
 
 @media (max-width: 992px) {
-  .calendar-body {
-    display: none;
-  }
+    .calendar-body {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
-  .horizontal-calendar {
+    .horizontal-calendar {
+        display: none;
+    }
+}
+
+.horizontal-calendar {
+    overflow: auto;
+}
+
+.calendar {
+    margin: 10px;
+    overflow: auto;
+}
+
+.calendar-row {
+    overflow-x: auto;
+}
+
+.calendar-day {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10%;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.separator {
+    width: 8px;
+}
+
+::-webkit-scrollbar {
     display: none;
-  }
-}
-
-.horizontal-calendar{
-  overflow: auto;
-}
-
-.calendar{
-  margin: 10px;
-  overflow:auto;
-}
-
-.calendar-row{
-  overflow-x:auto;
-}
-
-.calendar-day{
-  background-color: rgb(235, 235, 235);
-  border-radius: 10%;
-  padding: 10px 15px;
-  text-align:center;
-}
-
-.separator{
-  width: 8px;
-}
-
-::-webkit-scrollbar { 
-  display: none; 
 }
 
 /* TIMELINE */
@@ -213,20 +233,20 @@
 }
 
 .timeline-row {
-    overflow-x:auto;
+    overflow-x: auto;
 }
 
 timeline-row:first-child {
     border-radius: 10px 10px 10px 10px;
 }
 
-.timeline-hour{
+.timeline-hour {
     background-color: rgb(235, 235, 235);
     padding: 10px 15px;
-    text-align:center;
+    text-align: center;
     height: 150px;
     min-width: 100px;
-  }
+}
 
 .timeline-hour:hover {
     background-color: #d3d3d3;
@@ -237,22 +257,20 @@ timeline-row:first-child {
 }
 
 
-/* Iscrizioni */
-
+/* FORM */
 @media (max-width: 992px) {
     .desktop {
-      display: none;
+        display: none;
     }
-  }
-  
-  @media (min-width: 992px) {
-    .mobile {
-      display: none;
-    }
-  }
+}
 
-  .table-bordered {
+@media (min-width: 992px) {
+    .mobile {
+        display: none;
+    }
+}
+
+.table-bordered {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-  

@@ -1,0 +1,28 @@
+.header {
+    background-image: url(../res/chisiamo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+
+.header>div>img {
+    width: 75%;
+    align-items: center;
+    border-radius: 50%;
+}
+
+@media (min-width: 620px) {
+    .header>div>img {
+        width: 60%;
+        align-items: center;
+        border-radius: 50%;
+    }
+}
+
+.header > div > p {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 16pt;
+    padding: 20px;
+    margin: 20px;
+}

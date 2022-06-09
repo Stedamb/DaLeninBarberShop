@@ -49,41 +49,32 @@
         <!-- HEADER -->
         <div class="row header-home">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                <div class="col-10 col-md-8 col-xxl-6 container header-text">
-                    <p>Lorem Ipsum is simply dummy text, Lorem Ipsum is exactly dummy text.
-                        Lorem Ipsum is simply dummy text, Lorem Ipsum is exactly dummy text.
-                        Lorem Ipsum is simply dummy text, Lorem Ipsum is exactly dummy text.
-                        Lorem Ipsum is simply dummy text, Lorem Ipsum is exactly dummy text.
-                        Lorem Ipsum is simply dummy text, Lorem Ipsum is exactly dummy text.
-                    </p>
-                </div>
+                <img src="../res/logo.jpg" alt="logo" />
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <a class="btn btn-prenota" href="./prenota.php">Prenota</a>
+                    <a class="btn btn-prenota" href="tel:0541012491">Prenota</a>
             </div>
         </div>
 
         <!-- CONTENT -->
         <div class="row first-content">
-            <div class="col-12 col-lg-4 text-center d-flex justify-content-center align-items-center">
-                    <a class="btn btn-prenota" href="./prenota.html">Chi siamo</a>
+            <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
+                    <a class="btn btn-prenota" href="./listino.php">Listino</a>
             </div>
-            <div class="col-12 col-lg-4 text-center d-flex justify-content-center align-items-center">
-                    <a class="btn btn-prenota" href="./prenota.html">Photogallery</a>
+            <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
+                    <a class="btn btn-prenota" href="./location.php">Location</a>
             </div>
-            <div class="col-12 col-lg-4 text-center d-flex justify-content-center align-items-center">
-                    <a class="btn btn-prenota" href="./prenota.html">Non lo so</a>
+            <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
+                    <a class="btn btn-prenota" href="./photogallery.php">Photogallery</a>
+            </div>
+            <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
+                    <a class="btn btn-prenota" href="./chisiamo.php">Chi siamo</a>
             </div>
 
         </div>
 
     <?php require("./php/footer.php"); ?>
     </div>
-
-
-    <!-- SCRIPT -->
-    <!-- <script src="../script/variables.js"></script>
-    <script src="../script/script.js"></script> -->
 
 </body>
 

@@ -50,20 +50,21 @@
         <!-- HEADER -->
         <div class="row img1">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                <h1>Work in progress</h1>
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <a class="btn btn-prenota" href="">Low Fade</a>
+                    <a class="btn btn-prenota" href=""></a>
             </div>
         </div>
 
         <!-- CONTENT -->
-        <div class="row img2">
+        <!-- <div class="row img2">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
                     <a class="btn btn-prenota" href="">Mid Fade</a>
             </div>
-        </div>
+        </div> -->
 
     <?php require("./php/footer.php"); ?>
     </div>

@@ -1,5 +1,5 @@
 <?php
-require_once("php/db/include.php");
+//require_once("php/db/include.php");
 
 // if(!isset($_GET["form"])) {
 //     $templateParams["form"] = "add_cust.php";

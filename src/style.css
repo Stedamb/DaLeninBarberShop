@@ -79,7 +79,7 @@
 
 /* HEADER */
 .header-home {
-    background-image: url(../res/05-1.jpg);
+    background-image: url(../res/05-1_resized.jpg);
     background-size: cover;
     background-position: center;
     height: 95vh;
@@ -107,7 +107,7 @@
 
 /* CONTENT */
 .first-content {
-    background-image: url(../res/04-4.jpg);
+    background-image: url(../res/04-4_resized.jpg);
     background-size: cover;
     height: 95vh;
 }

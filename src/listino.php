@@ -50,21 +50,21 @@
         <div class="row header">
             <div class="col-md-6 col-xl-4">
                 <div class="card m-4">
-                    <img src="../res/taglio1.jpg" class="card-img-top" alt="...">
+                    <img src="../res/taglio1_resized.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Shampoo e Taglio</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-dark">20$</a>
+                        <a href="#" class="btn btn-dark">20€</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-xl-4">
                 <div class="card m-4">
-                    <img src="../res/taglio2.jpg" class="card-img-top" alt="...">
+                    <img src="../res/taglio2_resized.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Shampoo Taglio e Barba</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-dark">25$</a>
+                        <a href="#" class="btn btn-dark">25€</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Barba</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-dark">8$</a>
+                        <a href="#" class="btn btn-dark">8€</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Shampoo e Pettinata</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-dark">10$</a>
+                        <a href="#" class="btn btn-dark">10€</a>
                     </div>
                 </div>
             </div>
@@ -94,17 +94,17 @@
                     <div class="card-body">
                         <h5 class="card-title">Taglio Bambini</h5>
                         <p class="card-text">Fino a 10 anni</p>
-                        <a href="#" class="btn btn-dark">10$</a>
+                        <a href="#" class="btn btn-dark">10€</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-xl-4">
                 <div class="card m-4">
-                    <img src="../res/ragazzi.jpg" class="card-img-top" alt="...">
+                    <img src="../res/ragazzi2_resized.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Taglio Ragazzi</h5>
                         <p class="card-text">11-15 anni</p>
-                        <a href="#" class="btn btn-dark">15$</a>
+                        <a href="#" class="btn btn-dark">15€</a>
                     </div>
                 </div>
             </div>

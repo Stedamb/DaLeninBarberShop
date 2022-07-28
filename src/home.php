@@ -58,16 +58,16 @@
 
         <!-- CONTENT -->
         <div class="row first-content">
-            <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-4 text-center d-flex justify-content-center align-items-center">
                     <a class="btn btn-prenota" href="./listino.php">Listino</a>
             </div>
-            <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-4 text-center d-flex justify-content-center align-items-center">
                     <a class="btn btn-prenota" href="./location.php">Location</a>
             </div>
-            <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
+            <!-- <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
                     <a class="btn btn-prenota" href="./photogallery.php">Photogallery</a>
-            </div>
-            <div class="col-12 col-lg-3 text-center d-flex justify-content-center align-items-center">
+            </div> -->
+            <div class="col-12 col-lg-4 text-center d-flex justify-content-center align-items-center">
                     <a class="btn btn-prenota" href="./chisiamo.php">Chi siamo</a>
             </div>
 

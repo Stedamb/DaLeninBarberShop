@@ -54,9 +54,8 @@
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
                 <p>
-                    Ciao, sono Lenin! </br>Vieni anche tu a tagliare i capelli da noi! </br>
-                    Mi puoi trovare in via Don Lorenzo Milano 51 a Bellaria!
-                    
+                    Ciao, sono Lenin!</br>Vieni anche tu a tagliare i capelli da me! </br>
+                    Mi puoi trovare in via Don Lorenzo Milani 51 a Bellaria!
                 </p>
             </div>
         </div>

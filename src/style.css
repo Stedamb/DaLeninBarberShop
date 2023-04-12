@@ -5,6 +5,10 @@
     margin: 0;
 } */
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* TOPBAR */
 .topbar-text {
     font-family: 'Monsieur La Doulaise', cursive;
@@ -64,7 +68,7 @@
 
 /* HEADER */
 .header-home {
-    background-image: url(../res/03.gif);
+    background-image: url(../res/moving_background.gif);
     background-size: cover;
     background-position: center;
     height: 95vh;
@@ -86,9 +90,13 @@
 
 .btn-custom {
     background-color: #fff;
-    font-family: 'Lora', serif;
-    font-size: 2em;
+    font-family: 'Jost', serif;
+    font-size: 2.2em;
     /* border-radius: 100%; */
+}
+
+.map {
+    border-radius: 30px;
 }
 
 /* CONTENT */

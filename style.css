@@ -1,0 +1,120 @@
+/* ======MAIN CSS====== */
+
+/* .container-fluid { 
+    padding: 0;
+    margin: 0;
+} */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TOPBAR */
+.topbar-text {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 4em;
+    color: white;
+}
+
+.topbar-logo {
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 620px) {
+    .topbar-logo {
+        width: 50px;
+    }
+
+    .topbar-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* FOOTER */
+.footer-links > div > div > a { 
+    font-size: 1em;
+}
+
+.footer-bottom-text {
+    font-size: 0.5em;
+    color: rgba(255, 255, 255, 0.644);
+}
+
+@media (max-width: 620px) {
+    .footer-links > div > div > a {
+        font-size: 0.8em;
+    }
+
+    .footer-bottom-text {
+        font-size: 0.5em;
+        color: rgba(255, 255, 255, 0.644);
+    }
+}
+
+/* @media (max-width: 1000px) {
+    .footer-links {
+        font-size: 12pt;
+    }
+
+    .footer-bottom-text {
+        font-size: 10pt;
+        color: rgba(255, 255, 255, 0.644);
+    }
+} */
+
+/* ======CSS HOME====== */
+
+/* HEADER */
+.header-home {
+    background-image: url(../res/moving_background.gif);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+
+.header-home>div>img {
+    width: 75%;
+    align-items: center;
+    border-radius: 50%;
+}
+
+@media (min-width: 620px) {
+    .header-home>div>img {
+        width: 40%;
+        align-items: center;
+        border-radius: 50%;
+    }
+}
+
+.btn-custom {
+    background-color: #fff;
+    font-family: 'Jost', serif;
+    font-size: 2.2em;
+    /* border-radius: 100%; */
+}
+
+.map {
+    border-radius: 30px;
+}
+
+/* CONTENT */
+.first-content {
+    background-image: url(../res/04-4_resized.jpg);
+    background-size: cover;
+    height: 95vh;
+}
+
+/* ======CSS LOCATION====== */
+.location-background {
+    background-color: rgb(85, 85, 85);
+}
+
+.carousel { 
+    height: 90vh;
+}
+
+.carousel > .carousel-inner > .carousel-item > img{ 
+    height: 90vh;
+}

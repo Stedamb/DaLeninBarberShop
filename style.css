@@ -1,23 +1,30 @@
 /* ======MAIN CSS====== */
 
-/* .container-fluid { 
-    padding: 0;
-    margin: 0;
-} */
+@font-face {
+    font-family: 'Bank Gothic';
+    src: URL('./res/bankgothic.ttf');
+}
 
 * {
     font-family: 'Poppins', sans-serif;
 }
 
+.bg-custom-black {
+    background-color: #2a2c2e;
+}
+.bg-custom-gray {
+    background-color: #424344;
+}
+
 /* TOPBAR */
 .topbar-text {
     font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 4em;
+    font-size: 3.2em;
     color: white;
 }
 
 .topbar-logo {
-    width: 120px;
+    width: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -33,7 +40,7 @@
 }
 
 /* FOOTER */
-.footer-links > div > div > a { 
+.footer-links>div>div>a {
     font-size: 1em;
 }
 
@@ -43,7 +50,7 @@
 }
 
 @media (max-width: 620px) {
-    .footer-links > div > div > a {
+    .footer-links>div>div>a {
         font-size: 0.8em;
     }
 
@@ -52,19 +59,6 @@
         color: rgba(255, 255, 255, 0.644);
     }
 }
-
-/* @media (max-width: 1000px) {
-    .footer-links {
-        font-size: 12pt;
-    }
-
-    .footer-bottom-text {
-        font-size: 10pt;
-        color: rgba(255, 255, 255, 0.644);
-    }
-} */
-
-/* ======CSS HOME====== */
 
 /* HEADER */
 .header-home {
@@ -75,28 +69,33 @@
 }
 
 .header-home>div>img {
-    width: 75%;
+    width: 40%;
     align-items: center;
     border-radius: 50%;
 }
 
-@media (min-width: 620px) {
-    .header-home>div>img {
-        width: 40%;
-        align-items: center;
-        border-radius: 50%;
-    }
-}
-
 .btn-custom {
     background-color: #fff;
-    font-family: 'Jost', serif;
-    font-size: 2.2em;
+    font-family: 'Bank Gothic', serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.4em;
     /* border-radius: 100%; */
 }
 
-.map {
-    border-radius: 30px;
+@media (max-width: 620px) {
+    .header-home>div>img {
+        width: 75%;
+    }
+
+    .btn-custom {
+        font-size: 1.2em;
+    }
+}
+
+.border-rounded {
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 /* CONTENT */
@@ -111,10 +110,10 @@
     background-color: rgb(85, 85, 85);
 }
 
-.carousel { 
+.carousel {
     height: 90vh;
 }
 
-.carousel > .carousel-inner > .carousel-item > img{ 
+.carousel>.carousel-inner>.carousel-item>img {
     height: 90vh;
 }

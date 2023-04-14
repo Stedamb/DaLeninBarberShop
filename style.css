@@ -10,10 +10,12 @@
 }
 
 .bg-custom-black {
-    background-color: #2a2c2e;
+    background: rgb(64,64,64);
+    background: linear-gradient(50deg, rgba(64,64,64,1) 20%, rgba(0,0,0,1) 100%);
 }
 .bg-custom-gray {
-    background-color: #424344;
+    background: rgb(64,64,64);
+    background: linear-gradient(240deg, rgba(64,64,64,1) 30%, rgba(0,0,0,1) 100%);
 }
 
 /* TOPBAR */
@@ -96,6 +98,7 @@
 .border-rounded {
     border-radius: 10px;
     overflow: hidden;
+    /* border: 1px solid white; */
 }
 
 /* CONTENT */

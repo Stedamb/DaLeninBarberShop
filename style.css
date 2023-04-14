@@ -108,6 +108,26 @@
     height: 95vh;
 }
 
+#lenin {
+    width: 80%;
+    /* align-items: center; */
+    border-radius: 50%;
+}
+
+@media (max-width: 620px) {
+    #lenin {
+        width: 60%;
+    }
+}
+
+.header > div > p {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 16pt;
+    padding: 20px;
+    margin: 20px;
+}
+
 /* ======CSS LOCATION====== */
 .location-background {
     background-color: rgb(85, 85, 85);
@@ -120,3 +140,4 @@
 .carousel>.carousel-inner>.carousel-item>img {
     height: 90vh;
 }
+

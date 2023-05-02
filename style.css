@@ -110,13 +110,13 @@
 
 #lenin {
     width: 80%;
-    /* align-items: center; */
+    max-width: 300px;
     border-radius: 50%;
 }
 
 @media (max-width: 620px) {
     #lenin {
-        width: 60%;
+        width: 70%;
     }
 }
 

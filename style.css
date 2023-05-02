@@ -64,13 +64,28 @@
 
 /* HEADER */
 .header-home {
-    background-image: url(./res/moving_background.gif);
+    position: relative;
+    overflow: hidden;
+    height: 92vh;
+    width: 100%;
+
+    /* background-image: url(./res/03.mp4);
     background-size: cover;
     background-position: center;
-    height: 95vh;
+    height: 95vh; */
 }
 
-.header-home>div>img {
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+.header-home>div>div>div>img {
     width: 40%;
     align-items: center;
     border-radius: 50%;
@@ -86,7 +101,7 @@
 }
 
 @media (max-width: 620px) {
-    .header-home>div>img {
+    .header-home>div>div>div>img {
         width: 75%;
     }
 

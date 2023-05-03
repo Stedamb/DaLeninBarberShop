@@ -126,19 +126,19 @@ video {
 }
 
 .carousel-item:nth-child(1) {
-    background: url('res/photo2.JPG');
+    background: url('res/photo2.jpg');
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
   }
 .carousel-item:nth-child(2) {
-    background: url('res/photo1.JPG');
+    background: url('res/photo1.jpg');
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
   }
 .carousel-item:nth-child(3) {
-    background: url('res/photo4.JPG');
+    background: url('res/photo4.jpg');
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;

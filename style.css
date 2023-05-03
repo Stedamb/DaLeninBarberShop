@@ -1,0 +1,164 @@
+/* ======MAIN CSS====== */
+
+@font-face {
+    font-family: 'Bank Gothic';
+    src: URL('./res/bankgothic.ttf');
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-custom-black {
+    background: rgb(64,64,64);
+    background: linear-gradient(50deg, rgba(64,64,64,1) 20%, rgba(0,0,0,1) 100%);
+}
+.bg-custom-gray {
+    background: rgb(64,64,64);
+    background: linear-gradient(240deg, rgba(64,64,64,1) 30%, rgba(0,0,0,1) 100%);
+}
+
+/* TOPBAR */
+.topbar-text {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 3.2em;
+    color: white;
+}
+
+.topbar-logo {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 620px) {
+    .topbar-logo {
+        width: 50px;
+    }
+
+    .topbar-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* HERO */
+.header-home {
+    position: relative;
+    overflow: hidden;
+    height: 92vh;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+#hero-logo {
+    width: 40%;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#hero-btn {
+    background-color: #fff;
+    font-family: 'Bank Gothic', serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    /* border-radius: 100%; */
+}
+
+@media (max-width: 620px) {
+    #hero-logo {
+        width: 75%;
+    }
+
+    #hero-btn {
+        font-size: 1.2em;
+    }
+}
+
+/* SECTION */
+.border-rounded {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* CAROUSEL */
+#carousel {
+    height: 400px;
+    background-size: cover;
+}
+
+.carousel-inner .carousel-item {
+    width: 100%;
+    height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(1) {
+    background: url('res/photo2.jpg');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+  }
+.carousel-item:nth-child(2) {
+    background: url('res/photo1.jpg');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+  }
+.carousel-item:nth-child(3) {
+    background: url('res/photo4.jpg');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+  }
+
+.carousel-img {
+    display: block;
+    max-height: 300px;
+    background-size: cover;
+}
+
+/* CHI SIAMO */
+#name {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 4em;
+}
+
+#lenin {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+@media (max-width: 620px) {
+    #name {
+        font-size: 2em;
+    }
+
+    #lenin {
+        width: 70%;
+    }
+}
+
+/* FOOTER */
+.footer-link {
+    font-size: 1em;
+}
+
+@media (max-width: 620px) {
+    .footer-link {
+        font-size: 0.8em;
+    }
+
+}

@@ -48,7 +48,7 @@
             </video>
             <div class="row h-100">
                 <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <img src="./res/logo.jpg" alt="logo" id="hero-logo"/>
+                    <img src="./res/logo.jpg" alt="logo" id="hero-logo" />
                 </div>
                 <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
                     <a class="btn rounded-pill p-3 p-md-4" href="tel:0541012491" id="hero-btn">
@@ -200,16 +200,58 @@
             </table>
         </div>
     </div>
+
+    <!-- SECTION -->
     <div class="row bg-custom-gray text-white p-5">
-        <h4>Chi siamo</h4>
-        <div class="col-lg-2"></div>
-        <div class="col-12 col-lg-3 mt-2">
-            <img id="lenin" src="./res/lenny.jpg" alt="logo" />
+        <div class="col-12 col-lg-5 p-2">
+            <h4 class="mb-3">Photogallery</h4>
+            <div id="carousel" class="carousel slide carousel-fade border-rounded" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption d-block">
+                      <h5>First slide label</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-block">
+                      <h5>Second slide label</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-block">
+                      <h5>Third slide label</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
-        <div class="col-12 col-lg-4 mt-3 pt-xl-5">
-            <h5>
-                Ciao gente! Siamo liberi! </br> Chavaracacha!
-            </h5>
+        <div class="col-lg-1"></div>
+        <!-- <div class="col-lg-2"></div> -->
+        <div class="col-12 col-lg-5 mt-2">
+            <h4 class="mb-3 mt-3 mt-lg-0">Chi siamo</h4>
+            <div class="row">
+                <img id="lenin" src="./res/lenny.jpg" alt="photo of lenin" />
+                <div class="col-12 col-md-4 mt-4">
+                    <h3 class="mb-3 ms-4" id="name">Lenin</h3>
+                    <h5>
+                        Ciao gente! Siamo liberi! </br> Chavaracacha!
+                    </h5>
+                </div>
+
+            </div>
         </div>
     </div>
 

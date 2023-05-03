@@ -67,12 +67,6 @@
     position: relative;
     overflow: hidden;
     height: 92vh;
-    width: 100%;
-
-    /* background-image: url(./res/03.mp4);
-    background-size: cover;
-    background-position: center;
-    height: 95vh; */
 }
 
 video {
@@ -85,13 +79,13 @@ video {
     z-index: -1;
   }
 
-.header-home>div>div>div>img {
+#hero-logo {
     width: 40%;
     align-items: center;
     border-radius: 50%;
 }
 
-.btn-custom {
+#hero-btn {
     background-color: #fff;
     font-family: 'Bank Gothic', serif;
     font-weight: bold;
@@ -101,11 +95,11 @@ video {
 }
 
 @media (max-width: 620px) {
-    .header-home>div>div>div>img {
+    #hero-logo {
         width: 75%;
     }
 
-    .btn-custom {
+    #hero-btn {
         font-size: 1.2em;
     }
 }

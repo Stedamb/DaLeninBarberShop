@@ -1,0 +1,39 @@
+---
+import { Phone } from 'lucide-react';
+import AnimatedSocials from '@/components/react/AnimatedButtons';
+import AnimatedText from '@/components/react/AnimatedText';
+import { Image } from 'astro:assets';
+import { Button } from './ui/button';
+---
+
+<div class="lazyload shaded relative h-svh">
+  <video autoplay loop muted class="h-full w-full object-cover">
+    <source src="/animated_background.webm" type="video/mp4" />
+  </video>
+  <div class="darken absolute inset-0"></div>
+  <div class="absolute inset-0 z-10 flex flex-col items-center justify-center p-8">
+    <div class="grid grid-cols-1 md:grid-cols-1">
+      <Image
+        src="/logo.webp"
+        alt="Da Lenin Barber Shop Logo"
+        width={200}
+        height={200}
+        class="w-[75vw] rounded-full sm:w-[300px] md:w-[400px]"
+      />
+    </div>
+  </div>
+  <div
+    class="absolute bottom-8 left-1/2 z-50 flex w-full -translate-x-1/2 flex-col items-center justify-center pt-8 text-center"
+  >
+    <h1>Prenota un appuntamento:</h1>
+    <Button variant="ghost" client:load asChild>
+      <a
+        href="tel:3475555555"
+        class="my-2 flex items-center gap-2 font-semibold transition-all hover:scale-[1.05] active:scale-[.95]"
+      >
+        <Phone />
+        <p>347 555 5555</p>
+      </a>
+    </Button>
+  </div>
+</div>

@@ -1,0 +1,93 @@
+---
+import Navbar from '@/components/Navbar.astro';
+import Footer from '@/components/Footer.astro';
+import '@/styles/globals.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string;
+}
+
+const {
+  title = 'Da Lenin Barber Shop',
+  description = 'Salone di taglio e barba',
+  image = '/assets/og-image.png',
+  canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
+} = Astro.props;
+
+// Get the canonical URL
+const canonical = canonicalURL || new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta property="og:site_name" content="Da Lenin Barber Shop" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(image, Astro.site)} />
+    <meta name="twitter:creator" content="@daleninbarbershop" />
+
+    <!-- Additional SEO -->
+    <meta name="author" content="Da Lenin Barber Shop" />
+    <meta
+      name="keywords"
+      content="Da Lenin Barber Shop, taglio, barba, salone di taglio e barba, taglio di capelli, barba, taglio di capelli e barba"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Da Lenin Barber Shop",
+        "url": "https://www.daleninbarbershop.it",
+        "image": "https://www.daleninbarbershop.it/assets/og-image.png",
+        "sameAs": [
+          "https://www.facebook.com/daleninbarbershop",
+          "https://www.instagram.com/daleninbarbershop"
+        ],
+        "description": "Salone di taglio e barba."
+      }
+    </script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.webp" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.webp" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.webp" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- <ClientRouter /> -->
+  </head>
+  <body>
+    <Navbar />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <!-- <Toaster client:load /> -->
+  </body>
+</html>

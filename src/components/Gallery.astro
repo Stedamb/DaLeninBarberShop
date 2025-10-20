@@ -1,0 +1,20 @@
+---
+import GallerySlider from './react/GallerySlider';
+---
+
+<section id="prices" class="relative overflow-hidden py-20">
+  <!-- Background gradients -->
+  <div class="bg-background absolute inset-0">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(at_47%_33%,hsl(0,0%,100%)_0,transparent_59%)] opacity-10"
+    >
+    </div>
+  </div>
+
+  <div class="relative">
+    <h2 class="mb-8 text-center font-serif text-3xl font-normal italic md:text-4xl">Gallery</h2>
+    <div class="flex justify-center gap-8">
+      <GallerySlider client:visible />
+    </div>
+  </div>
+</section>

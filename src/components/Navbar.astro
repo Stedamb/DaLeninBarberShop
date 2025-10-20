@@ -1,0 +1,88 @@
+---
+import { Button } from '@/components/ui/button';
+import MobileMenu from '@/components/react/MobileMenu';
+import { routes } from '@/routes/routes';
+import { Image } from 'astro:assets';
+---
+
+<div id="navbar" class="absolute top-0 left-0 z-50 w-full transform transition-all duration-300">
+  {/* Mobile Menu */}
+  <!-- <MobileMenu client:load /> -->
+  <div class="font-title relative my-6 flex items-center justify-around text-4xl lg:text-5xl">
+    <div class="lg:hidden">Da Lenin Barber Shop</div>
+    <div class="hidden lg:block">Da Lenin</div>
+    <Image
+      src="/logo-trasparent.webp"
+      alt="Da Lenin Logo"
+      width={100}
+      height={100}
+      class="absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 lg:block"
+    />
+    <div class="hidden lg:block">Barber Shop</div>
+  </div>
+
+  {/* Desktop Menu */}
+  <!-- <div class="hidden justify-center gap-4 p-6 lg:flex">
+    {
+      routes.map((route) => (
+        <Button variant="link" size="sm" asChild>
+          <a class="text-foreground px-2 text-2xl opacity-90" href={route.href}>
+            {route.name}
+          </a>
+        </Button>
+      ))
+    }
+  </div> -->
+</div>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  let lastScroll = window.scrollY;
+
+  const handleScroll = () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > window.innerHeight * 0.8) {
+      // After 80%, show navbar with animation
+      navbar?.classList.remove('absolute', 'hidden');
+      navbar?.classList.add('fixed', 'bg-background/80', 'backdrop-blur-lg', 'shadow-md');
+
+      if (currentScroll < lastScroll) {
+        // Scrolling up after 80%
+        navbar?.classList.remove('-translate-y-full');
+        navbar?.classList.add('translate-y-0');
+      } else {
+        // Scrolling down after 80%
+        navbar?.classList.remove('translate-y-0');
+        navbar?.classList.add('-translate-y-full');
+      }
+    } else if (currentScroll > window.innerHeight * 0.5) {
+      // Between 50% and 80%, hide navbar
+      navbar?.classList.remove('absolute', 'translate-y-0');
+      navbar?.classList.add(
+        'hidden',
+        'fixed',
+        '-translate-y-full',
+        'bg-background/80',
+        'backdrop-blur-lg',
+        'shadow-md'
+      );
+    } else {
+      // Before 50%, show navbar at top
+      navbar?.classList.remove(
+        'hidden',
+        'fixed',
+        '-translate-y-full',
+        'translate-y-0',
+        'bg-background/80',
+        'backdrop-blur-lg',
+        'shadow-md'
+      );
+      navbar?.classList.add('absolute');
+    }
+
+    lastScroll = currentScroll;
+  };
+
+  window.addEventListener('scroll', handleScroll);
+</script>

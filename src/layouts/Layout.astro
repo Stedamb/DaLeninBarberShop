@@ -28,6 +28,7 @@ const canonical = canonicalURL || new URL(Astro.url.pathname, Astro.site).href;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <meta name="google-site-verification" content={import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION} />
 
     <title>{title}</title>
 
